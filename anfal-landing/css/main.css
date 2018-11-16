@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Velocity";
-    src:url("../fonts/velocity-font.ttf");
+    src: url("../fonts/Velocity.ttf");
 }
 
 @font-face {
-    font-family:"MyriadPro";
-    src:url("../fonts/MyriadPro-Light.ttf");
+    font-family: "MyriadPro";
+    src: url("../fonts/MyriadPro-Light.ttf");
 }
 
 
@@ -33,25 +33,26 @@ a {
     text-align: center;
     padding-top: 20px;
     user-select: none;
+    letter-spacing: 4px;
 }
 
-.header-content-title {
+.hero {
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.hero-title {
     text-transform: uppercase;
     font-weight: 900;
 }
 
-.header-content {
-    display: flex;
-    padding-top: 115px;
-    padding-bottom: 90px;
-}
-
-.header-content-left {
+.hero-left {
     width: 517px;
     padding: 60px 68px;
 }
 
-.header-content-left p {
+.hero-left p {
     font-size: 22px;
     font-family: "MyriadPro";
     padding: 20px 0;
@@ -90,7 +91,7 @@ a {
     background-color: #10ac84;
 }*/
 
-.header-content-right {
+.hero-right {
     width: 500px;
     user-select: none;
 }
@@ -103,7 +104,7 @@ a {
 }
 
 
-.main-content {
+.currently {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -125,7 +126,7 @@ h2:after {
     content: "";
     display: block;
     width: 50px;
-    height: 3px;
+    height: 2px;
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -137,12 +138,12 @@ h3 {
     font-size: 24px;
 }
 
-.main-content-left {
+.currently-left {
     width: 500px;
     margin-right: 80px;
 }
 
-.main-content-right {
+.currently-right {
     width: 500px;
     margin-left: 80px;
 }
@@ -172,7 +173,7 @@ h3 {
 }
 
 
-.features-items {
+.features {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -181,22 +182,22 @@ h3 {
     justify-content: space-between;
 }
 
-.features-items-left,
-.features-items-right {
+.features-left,
+.features-right {
     padding: 50px 25px;
 }
 
-.titles {
+.features-titles {
     font-weight: 600;
     font-size: 18px;
 }
 
-.features {
+.feature {
     margin-bottom: 40px;
 }
 
 
-.features p {
+.feature p {
     padding-left: 60px;
 }
 
@@ -252,7 +253,7 @@ h3 {
 
 .form {
     background-color: #fff;
-    padding-bottom: 50px;
+    padding-bottom: 110px;
 }
 
 form {
@@ -260,7 +261,7 @@ form {
     padding: 40px;
 }
 
-input {
+input, textarea {
     display: block;
     border: none;
     border-bottom: 2px solid #b1b2b3;
@@ -269,12 +270,12 @@ input {
     size: 30;
 }
 
-input:focus {
+input:focus, textarea:focus {
     outline: none;
 }
 
-input:last-child {
-    padding-bottom: 80px;
+textarea {
+    resize: none;
 }
 
 
@@ -288,7 +289,9 @@ input:last-child {
 
 .footer a {
     color: #b1b2b3;
-    padding: 10px;
+    padding: 15px;
+    font-size: 25px;
+
 }
 
 .footer a:hover {
