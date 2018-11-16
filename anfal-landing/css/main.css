@@ -1,0 +1,296 @@
+@font-face {
+    font-family: "Velocity";
+    src:url("../fonts/velocity-font.ttf");
+}
+
+@font-face {
+    font-family:"MyriadPro";
+    src:url("../fonts/MyriadPro-Light.ttf");
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ /*-- • • • • • • • • HEADER • • • • • • • • */
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    font-family: "Velocity";
+    font-size: 48px;
+    font-weight: 900;
+    color: #10ac84;
+    text-align: center;
+    padding-top: 20px;
+    user-select: none;
+}
+
+.header-content-title {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.header-content {
+    display: flex;
+    padding-top: 115px;
+    padding-bottom: 180px;
+}
+
+.header-content-left {
+    width: 517px;
+    padding: 60px 68px;
+}
+
+.header-content-left p {
+    font-size: 22px;
+    font-family: "MyriadPro";
+    padding: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 25px;
+    width: 230px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #10ac84;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #6a7079;
+}
+
+.btn-right {
+    background-color: #6a7079;
+}
+
+/*.btn-right:hover,
+  .btn-right:active {
+    background-color: #10ac84;
+}*/
+
+.header-content-right {
+    width: 500px;
+    user-select: none;
+}
+
+/*-- • • • • • • • • MAIN • • • • • • • • */
+/*-- • • • • • • • • Что мы имеем сейчас • • • • • • • • */
+
+.main {
+    background-color: #f4f4f5;
+}
+
+
+.main-content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    height: 700px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 42px;
+    text-align: center;
+    padding-top: 65px;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #10ac84;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.main-content-left {
+    width: 500px;
+    margin-right: 80px;
+}
+
+.main-content-right {
+    width: 500px;
+    margin-left: 80px;
+}
+
+.article {
+    padding: 40px 0 98px 0;
+}
+
+.article p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+
+/*-- • • • • • • • • Что мы предлагаем • • • • • • • • */
+
+
+.our-features {
+    height: 1100px;
+    background-color: #fff;
+}
+
+.description {
+    font-size: 25px;
+    text-align: center;
+    padding: 70px;
+}
+
+
+.features-items {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-items-left,
+.features-items-right {
+    padding: 50px 25px;
+}
+
+.titles {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.features {
+    margin-bottom: 40px;
+}
+
+
+.features p {
+    padding-left: 60px;
+}
+
+.text:before {
+    content: url("../images/text.svg");
+    position: absolute;
+}
+
+.search:before {
+    content: url("../images/search.svg");
+    position: absolute;
+}
+
+.book:before {
+    content: url("../images/book.svg");
+    position: absolute;
+}
+
+.ipad:before {
+    content: url("../images/ipad.svg");
+    position: absolute;
+}
+
+.heart:before {
+    content: url("../images/heart.svg");
+    position: absolute;
+}
+
+.audiobooks:before {
+    content: url("../images/audiobooks.svg");
+    position: absolute;
+}
+
+
+/*-- • • • • • • • • Интерфейс приложения • • • • • • • • */
+
+
+.interface {
+    padding-bottom: 50px;
+}
+
+.interface img {
+    width: 1170px;
+    padding: 40px 0;
+}
+
+.interface .btn,
+.form .btn {
+    margin-left: 40%;
+}
+
+/*-- • • • • • • • • Остались вопросы • • • • • • • • */
+
+.form {
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
+form {
+    margin-left: 25%;
+    padding: 40px;
+}
+
+input {
+    display: block;
+    border: none;
+    border-bottom: 2px solid #b1b2b3;
+    width: 550px;
+    padding: 25px 0 15px 0;
+    size: 30;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:last-child {
+    padding-bottom: 80px;
+}
+
+
+/*-- • • • • • • • • FOOTER • • • • • • • • */
+
+.footer {
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+}
+
+.footer a {
+    color: #b1b2b3;
+    padding: 10px;
+}
+
+.footer a:hover {
+    color: #10ac84;
+}
