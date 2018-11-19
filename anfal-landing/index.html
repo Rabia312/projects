@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Anfal</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -90,7 +92,7 @@
                             </div>
                         </div>
 
-                        <img src="images/iPhone.png" alt="iphone" width="230" height="450">
+                        <img src="images/iPhone.png" alt="iphone" width="250" height="475">
 
                         <div class="features-right">
                             <div class="feature ipad">
@@ -115,7 +117,21 @@
             <section class="interface">
                 <div class="container">
                     <h2>Интерфейс приложения</h2>
-                    <img src="images/screens.png" alt="">
+                    <div class="owl-carousel">
+                        <div><img src="images/Screen-1.jpg" alt="Screen-1" width="250"></div>
+                        <div><img src="images/Screen-2.png" alt="Screen-2" width="250"></div>
+                        <div><img class="iPhone-6111" src="images/iPhone-6111.png" alt="iPhone-6111" width="250"></div>
+                        <div><img src="images/Screen-3.png" alt="Screen-3" width="250"></div>
+                        <div><img src="images/Screen-4.png" alt="Screen-4" width="250"></div>
+
+                        <div><img src="images/Screen-1.jpg" alt="Screen-1" width="250"></div>
+                        <div><img src="images/Screen-2.png" alt="Screen-2" width="250"></div>
+                        <div><img class="iPhone-6111" src="images/iPhone-6111.png" alt="iPhone-6111" width="250"></div>
+                        <div><img src="images/Screen-3.png" alt="Screen-3" width="250"></div>
+                        <div><img src="images/Screen-4.png" alt="Screen-4" width="250"></div>
+                    </div>
+
+                    <!-- <img class="screeen" src="images/screens.png" alt="" width="1500"> -->
                     <a class="btn" href="#">Помочь проекту</a>
                 </div>
             </section>
@@ -145,5 +161,33 @@
         <a href="#" class="fab fa-pinterest-p"></a>
         <a href="#" class="fab fa-linkedin-in"></a>
     </footer>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/owlcarousel/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+    items:5
+    });
+});
+</script>
+
+<script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+    items:5,
+    loop:true,
+    margin:55,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:true
+});
+    $('.play').on('click',function(){
+        owl.trigger('play.owl.autoplay',[1000])
+    })
+    $('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+</script>
 </body>
 </html>
