@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Anfal</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
@@ -116,22 +117,16 @@
 
             <section class="interface">
                 <div class="container">
-                    <h2>Интерфейс приложения</h2>
-                    <div class="owl-carousel">
-                        <div><img src="images/Screen-1.png" alt="Screen-1" width="250"></div>
-                        <div><img src="images/Screen-2.png" alt="Screen-2" width="250"></div>
-                        <div><img class="iPhone-6111" src="images/iPhone-6111.png" alt="iPhone-6111" width="250"></div>
-                        <div><img src="images/Screen-3.png" alt="Screen-3" width="250"></div>
-                        <div><img src="images/Screen-4.png" alt="Screen-4" width="250"></div>
 
-                        <div><img src="images/Screen-1.png" alt="Screen-1" width="250"></div>
-                        <div><img src="images/Screen-2.png" alt="Screen-2" width="250"></div>
-                        <div><img class="iPhone-6111" src="images/iPhone-6111.png" alt="iPhone-6111" width="250"></div>
-                        <div><img src="images/Screen-3.png" alt="Screen-3" width="250"></div>
-                        <div><img src="images/Screen-4.png" alt="Screen-4" width="250"></div>
+                    <h2>Интерфейс приложения</h2>
+                      <div class="interface-screens">
+                        <img class="screen" src="images/Screen-1.png" alt="Screen-1" width="250">
+                        <img class="screen" src="images/Screen-2.png" alt="Screen-2" width="250">
+                        <img class="screen iphone" src="images/iPhone_6.png" alt="iPhone-6111" width="270">
+                        <img class="screen" src="images/Screen-3.png" alt="Screen-3" width="250">
+                        <img class="screen" src="images/Screen-4.png" alt="Screen-4" width="250">
                     </div>
 
-                    <!-- <img class="screeen" src="images/screens.png" alt="" width="1500"> -->
                     <a class="btn" href="#">Помочь проекту</a>
                 </div>
             </section>
@@ -161,33 +156,5 @@
         <a href="#" class="fab fa-pinterest-p"></a>
         <a href="#" class="fab fa-linkedin-in"></a>
     </footer>
-
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-<script src="js/owlcarousel/owl.carousel.min.js"></script>
-<script>
-    $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-    items:5
-    });
-});
-</script>
-
-<script>
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-    items:5,
-    loop:true,
-    margin:55,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true
-});
-    $('.play').on('click',function(){
-        owl.trigger('play.owl.autoplay',[1000])
-    })
-    $('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-})
-</script>
 </body>
 </html>

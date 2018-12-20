@@ -1,11 +1,15 @@
 @font-face {
     font-family: "Velocity";
-    src: url("../fonts/Velocity.ttf");
+    src: url("../fonts/Velocity/Velocity.ttf") format("embedded-opentype"), url("../fonts/Velocity/Velocity.woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
     font-family: "MyriadPro";
-    src: url("../fonts/MyriadPro-Regular.ttf");
+    src: url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Regular.woff");
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -19,14 +23,8 @@ a {
 
  /*-- • • • • • • • • HEADER • • • • • • • • */
 
-.container {
-    width: 1170px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
 .logo {
-    font-family: "Velocity";
+    font-family: "Velocity", sans-serif;
     font-size: 48px;
     font-weight: 900;
     color: #10ac84;
@@ -34,6 +32,14 @@ a {
     padding-top: 20px;
     user-select: none;
     letter-spacing: 4px;
+}
+
+/*-- • • • • • • • • MAIN • • • • • • • • */
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .hero {
@@ -54,7 +60,7 @@ a {
 
 .hero-left p {
     font-size: 22px;
-    font-family: "MyriadPro";
+    font-family: "MyriadPro", sans-serif;
     padding: 20px 0;
 }
 
@@ -96,11 +102,11 @@ a {
     user-select: none;
 }
 
-/*-- • • • • • • • • MAIN • • • • • • • • */
 /*-- • • • • • • • • Что мы имеем сейчас • • • • • • • • */
 
 .main {
     background-color: #f4f4f5;
+    width: 100%;
 }
 
 .currently {
@@ -232,32 +238,30 @@ h3 {
 
 /*-- • • • • • • • • Интерфейс приложения • • • • • • • • */
 
-
 .interface {
-    height: 1000px;
-    background: url("../images/screens1.png") no-repeat;
-    background-position: 50% 45%;
-    background-size: 1260px 600px;
+    margin-bottom: 100px;
 }
-
-.owl-carousel {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
+.interface-screens {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.owl-carousel img {
-    padding-top: 160px;
+.screen {
+    box-shadow: 25px 25px 30px rgba(0,0,0,0.1);
+    margin: 15px;
+}
+
+.iphone {
+    border-radius: 40px;
 }
 
 .interface .btn {
     margin-left: 40%;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
-/*-- • • • • • • • • Остались вопросы • • • • • • • • */
+/*-- • • • • • • • • Остались вопросы? • • • • • • • • */
 
 .form {
     background-color: #fff;
@@ -272,7 +276,8 @@ form {
 input, textarea {
     display: block;
     border: none;
-    border-bottom: 2px solid #b1b2b3;
+    border-bottom: 2px solid #606264;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.3);
     width: 550px;
     padding: 25px 0 15px 0;
     size: 30;
@@ -280,6 +285,7 @@ input, textarea {
 
 input:focus, textarea:focus {
     outline: none;
+    border-bottom: 2px solid #10ac84;
 }
 
 textarea {
@@ -309,4 +315,32 @@ textarea {
 
 .footer a:hover {
     color: #10ac84;
+}
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
 }
