@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Velocity";
-    src: url("../fonts/Velocity/Velocity.ttf") format("embedded-opentype"), url("../fonts/Velocity/Velocity.woff");
+    src: url("../fonts/Velocity/Velocity.ttf") format("ttf"), url("../fonts/Velocity/Velocity.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "MyriadPro";
-    src: url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("embedded-opentype"), url("../fonts/MyriadPro/MyriadPro-Regular.woff");
+    src: url("../fonts/MyriadPro/MyriadPro-Regular.ttf") format("ttf"), url("../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -15,6 +15,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 
 a {
@@ -92,11 +93,6 @@ a {
     background-color: #6a7079;
 }
 
-/*.btn-right:hover,
-  .btn-right:active {
-    background-color: #10ac84;
-}*/
-
 .hero-right {
     width: 500px;
     user-select: none;
@@ -106,16 +102,13 @@ a {
 
 .main {
     background-color: #f4f4f5;
-    width: 100%;
+    /*width: 100%;*/
+
 }
 
 .currently {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    height: 700px;
+    min-height: 700px;
     margin-top: 100px;
     margin-bottom: 50px;
 }
@@ -167,7 +160,7 @@ h3 {
 
 
 .our-features {
-    height: 900px;
+    min-height: 900px;
     background-color: #fff;
 }
 
@@ -178,10 +171,6 @@ h3 {
 }
 
 .features {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     justify-content: space-between;
 }
@@ -319,28 +308,3 @@ textarea {
 
 
 
-
-/* Large desktops and laptops */
-@media (min-width: 1200px) {
-
-}
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-
-}
-
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
-
-}

@@ -1,0 +1,104 @@
+@media screen and (max-width: 1024px) {
+    .hero-title {
+    color: blue;
+}
+
+/*--------------*/
+
+.currently {
+    margin-left: 60px;
+}
+
+.article {
+    padding: 20px 0 68px 0;
+}
+
+/*--------------*/
+
+.description {
+    padding: 40px 0;
+}
+
+.features-left,
+.features-right {
+    padding: 50px 55px;
+}
+
+.interface img {
+    width: 200px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+.hero-title {
+    color: red;
+}
+
+.interface img {
+    width: 200px;
+}
+
+/*------------------*/
+
+.main {
+    /*background-color: #333;*/
+
+}
+
+.currently-left {
+    margin-left: 100px;
+}
+
+.currently-right {
+    margin-right: 100px;
+}
+
+/*----------------------*/
+
+.features-left,
+.features-right {
+    padding: 50px 40px;
+}
+}
+
+@media screen and (max-width: 480px) {
+
+    .hero-title {
+    color: yellow;
+}
+.hero-right {
+    text-align: center;
+}
+.hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hero-title {
+    text-align: center;
+}
+/*-------------*/
+
+.currently {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.currently-left, .currently-right {
+    text-align: center;
+}
+
+/*----------------*/
+.our-features img {
+    display: none;
+}
+
+.features-left,
+.features-right {
+    padding: 20px 75px;
+}
+}
