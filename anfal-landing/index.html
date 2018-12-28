@@ -27,11 +27,18 @@
                     <h1 class="hero-title">Электронная библиотека исламских книг</h1>
                     <p>Мы планируем предоставить вам удобный способ чтения книг на мобильных устройствах на iOS и Android. Сервис включает в себя электронную библиотеку с широким выбором книг.</p>
                     <a class="btn" href="#">Помочь проекту</a>
-                    <a class="btn btn-right" href="#">Посмотреть видео</a>
+                    <a class="btn btn-right" onclick="openWin();" href="#">Посмотреть видео</a>
                 </div>
 
                 <div class="hero-right">
                     <img src="images/App-Demo.png" alt="App-Demo" width="400">
+                </div>
+
+    <!-- • • • • • • • • Модальное окно • • • • • • • • -->
+
+                <div class="modal">
+                    <iframe width="700" height="415" src="https://www.youtube.com/embed/N7vRrFk1KRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img class="close" src="images/close.png" alt="" width="25">
                 </div>
             </div>
     </div>
@@ -162,6 +169,6 @@
         <a href="#" class="fab fa-linkedin-in"></a>
     </footer>
 
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script src="js/script.js"></script>
 </body>
 </html>
