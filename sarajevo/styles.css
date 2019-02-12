@@ -282,7 +282,6 @@ a {
   justify-content: center;
   margin-bottom: 80px;
 }
-
 .works__navigation--item {
   padding: 10px 15px;
   border-radius: 7px;
@@ -382,13 +381,14 @@ a {
   position: relative;
   display: inline-block;
 }
-
 .team__member--name {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
   font-size: 15px;
 }
-
+.team__member--name:hover {
+  color: #16b696;
+}
 .team__member--job {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -431,10 +431,6 @@ a {
   cursor: pointer;
 }
 
-.team__member--name:hover {
-  color: #16b696;
-}
-
 /*• • • • • FACTS • • • • •*/
 .facts {
   background-image: linear-gradient(to top, rgba(16, 22, 54, 0.7), rgba(16, 22, 54, 0.7)), url("images/bg/Layer 29.jpg");
@@ -444,10 +440,6 @@ a {
 .facts-flex {
   justify-content: center;
   text-align: center;
-}
-
-.facts--icons {
-  margin: 0 20px;
 }
 
 .facts__fact {
@@ -461,6 +453,7 @@ a {
   border: 2px solid #6d7883;
   border-radius: 50%;
   position: relative;
+  margin: 0 20px;
 }
 
 .facts--icon {
@@ -538,7 +531,7 @@ input {
 }
 
 textarea {
-  width: 633px;
+  width: 630px;
   resize: none;
   padding-bottom: -40px;
 }
@@ -592,12 +585,43 @@ input:focus, textarea:focus {
   width: 260px;
   margin-left: 88px;
 }
-
 .footer__par--logo {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   font-size: 27px;
   margin-top: 45px;
+}
+.footer__par--subscribe {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: 50px;
+}
+.footer__par--arrow {
+  position: relative;
+  width: 245px;
+  height: 40px;
+  border: 2px solid #fff;
+}
+.footer__par--info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  line-height: 20px;
+}
+.footer__par--explore {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: 45px;
+}
+.footer__par--links {
+  margin-right: 40px;
+}
+.footer__par--link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  line-height: 20px;
+  color: #fff;
 }
 
 .footer__description--text {
@@ -606,20 +630,6 @@ input:focus, textarea:focus {
   font-size: 13px;
   line-height: 20px;
   width: 245px;
-}
-
-.footer__par--subscribe {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-size: 18px;
-  margin-top: 50px;
-}
-
-.footer__par--arrow {
-  position: relative;
-  width: 245px;
-  height: 40px;
-  border: 2px solid #fff;
 }
 
 .input-subscibe {
@@ -656,30 +666,6 @@ input:focus, textarea:focus {
 }
 
 .fa-arrow-right {
-  color: #fff;
-}
-
-.footer__par--info {
-  font-family: "Open Sans", sans-serif;
-  font-size: 11px;
-  line-height: 20px;
-}
-
-.footer__par--explore {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  font-size: 18px;
-  margin-top: 45px;
-}
-
-.footer__par--links {
-  margin-right: 40px;
-}
-
-.footer__par--link {
-  font-family: "Open Sans", sans-serif;
-  font-size: 11px;
-  line-height: 20px;
   color: #fff;
 }
 
