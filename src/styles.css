@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg');
+    background-size: cover;
+}
+
+h1 {
+    color: #F50057;
+    font-family: 'Impact', sans-serif;
+    margin-right: 300px;
+    margin-top: 45px;
+    text-align: right;
+}
